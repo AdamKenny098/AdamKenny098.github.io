@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
+    <title>Game Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Page</h1>
+        <h1>My Game Development Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm [Your Name], a passionate game developer. I enjoy creating immersive gaming experiences and sharing my projects with the world.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1.</p>
-                </li>
-                <li>
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2.</p>
-                </li>
-                <!-- Add more projects as needed -->
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-        </section>
-    </main>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate game developer with experience in creating engaging and fun games. Below you can find some of my favorite projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <img src="project1.jpg" alt="Project 1 Screenshot">
+            <p>A brief description of Project 1. This game was developed using Unity and C#.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="project2.jpg" alt="Project 2 Screenshot">
+            <p>A brief description of Project 2. This game was developed using Unreal Engine and Blueprint.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please use the form below.</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 My Game Developer Portfolio</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
