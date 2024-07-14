@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>098 Industries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>098 Industiries</h1>
+        <nav>
+            <ul>
+                <li><a href="#CA1">CA1</a></li>
+                <li><a href="#CA2">CA2</a></li>
+                <li><a href="#CA3">CA3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>CA1</h3>
+            <img src="project1.jpg" alt="Project 1 Screenshot">
+            <p>Find our Project stored here on GitHub<a href="https://github.com/Rampant098/Rampant098.github.io">Go back to Page 1</a></p>
+        </div>
+        <div class="project">
+            <h3>CA2</h3>
+            <img src="project1.jpg" alt="Project 1 Screenshot">
+            <p>This is our space themed horror visual novel. Play as Admiral Kril of the Klorax empire and explore the secrets of the ancient DeathWorld Erith</p>
+        </div>
+        <div class="project">
+            <h3>CA3</h3>
+            <img src="project2.jpg" alt="Project 2 Screenshot">
+            <p>A brief description of Project 2. This game was developed using Unreal Engine and Blueprint.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please use the form below.</p>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Game Developer Portfolio</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
