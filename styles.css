@@ -3,11 +3,6 @@ body {
     margin: 0;
     padding: 0 0 3rem 0;
     line-height: 1.6;
-    background-image: url('images/Background.png');
-    background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 header {
