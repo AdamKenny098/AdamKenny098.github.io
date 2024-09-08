@@ -14,36 +14,52 @@
             margin-top: 140px; /* Adjust this based on your header's height */
         }
 
-        /* Header Section */
+                /* Header Section */
         header {
-        background-color: #2c3e50;
-        color: #fff;
-        text-align: center;
-        padding: 20px 0;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000; /* Ensure it's on top of other elements */
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            position: relative;
         }
 
         header h1 {
             font-size: 3.5rem;
+            text-align: center; /* Center the title */
             margin: 0;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%; /* Align vertically */
+            transform: translateY(-50%);
         }
 
         header p {
             font-size: 1.2rem;
+            text-align: center; /* Center the subtitle */
+            margin: 0;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 80%; /* Adjusted for subtitle */
+            transform: translateY(-50%);
         }
 
-        .header-content {
+        /* Button styles */
+        .header-buttons {
+            margin-left: auto;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: flex-end;
         }
 
-         /* Button styles */
-         .header-buttons .btn {
+        .header-buttons .btn {
             margin-left: 10px;
             color: #fff;
             border-color: #fff;
@@ -53,6 +69,7 @@
             background-color: #fff;
             color: #2c3e50;
         }
+
 
         /* Portfolio section */
         #portfolio {
@@ -128,18 +145,15 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="container">
         <div class="header-content">
-            <div>
-                <h1>Freelancer</h1>
-                <p>Web Developer - Graphic Artist - User Experience Designer</p>
-            </div>
             <div class="header-buttons">
                 <a href="#portfolio" class="btn btn-outline-light">Portfolio</a>
                 <a href="#about" class="btn btn-outline-light">About</a>
                 <a href="#contact" class="btn btn-outline-light">Contact Me</a>
             </div>
+            <h1>Freelancer</h1>
+            <p>Web Developer - Graphic Artist - User Experience Designer</p>
         </div>
     </header>
     
