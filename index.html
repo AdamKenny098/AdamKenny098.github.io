@@ -41,6 +41,7 @@
             height: 150px;
             margin: 10px;
             border-radius: 5px;
+            cursor: pointer;
             transition: transform 0.3s ease;
         }
 
@@ -48,40 +49,55 @@
             transform: scale(1.1);
         }
 
-        .about {
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .modal-content img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .modal-content h2 {
+            font-size: 28px;
+            margin-top: 10px;
+        }
+
+        .modal-content p {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+
+        .modal-content .close {
             background-color: #28a5a0;
-            color: #fff;
-            padding: 50px 0;
-            text-align: center;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
         }
 
-        .about h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        .navbar a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .navbar a:hover {
-            background-color: #ddd;
-            color: #000;
+        .modal-content .close:hover {
+            background-color: #1f7b75;
         }
     </style>
 </head>
@@ -103,7 +119,7 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-        <img src="img1.png" alt="Portfolio 1">
+        <img src="img1.png" alt="Portfolio 1" id="portfolioImg1">
         <img src="img2.png" alt="Portfolio 2">
         <img src="img3.png" alt="Portfolio 3">
         <img src="img4.png" alt="Portfolio 4">
@@ -111,14 +127,86 @@
         <img src="img6.png" alt="Portfolio 6">
     </section>
 
+    <!-- Modal for Portfolio Item 1 -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img src="img1.png" alt="Project Image">
+            <h2>Project 1</h2>
+            <p>Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?</p>
+            <p><strong>Client:</strong> Start Bootstrap &nbsp; | &nbsp; <strong>Date:</strong> April 2014 &nbsp; | &nbsp; <strong>Service:</strong> Web Development</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About</h2>
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. 
-           Whether you're a student looking to showcase your work, a professional 
-           looking to attract clients, or a graphic artist looking to share your projects, 
-           this template can help you do that in a simple yet elegant way.</p>
+        <div style="max-width: 800px; margin: auto;">
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <a href="#" class="download-btn">Download Theme</a>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="location">
+            <h3>Location</h3>
+            <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+        </div>
+        <div class="around-the-web">
+            <h3>Around the Web</h3>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+        <div class="credits">
+            <h3>Credits</h3>
+            <p>Freelancer is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and the modal trigger element
+        var img1 = document.getElementById("portfolioImg1");
+
+        // Get the close button
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        // Show the modal when the image is clicked
+        img1.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Close the modal when the close button is clicked
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Close the modal when clicking outside the modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 </html>
