@@ -36,6 +36,24 @@
             font-size: 1.2rem;
         }
 
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+         /* Button styles */
+         .header-buttons .btn {
+            margin-left: 10px;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .header-buttons .btn:hover {
+            background-color: #fff;
+            color: #2c3e50;
+        }
+
         /* Portfolio section */
         #portfolio {
             padding: 60px 0;
@@ -111,11 +129,20 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <h1>Freelancer</h1>
-        <p>Web Developer - Graphic Artist - User Experience Designer</p>
+    <header class="container">
+        <div class="header-content">
+            <div>
+                <h1>Freelancer</h1>
+                <p>Web Developer - Graphic Artist - User Experience Designer</p>
+            </div>
+            <div class="header-buttons">
+                <a href="#portfolio" class="btn btn-outline-light">Portfolio</a>
+                <a href="#about" class="btn btn-outline-light">About</a>
+                <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+            </div>
+        </div>
     </header>
-
+    
     <!-- Portfolio Section -->
     <section id="portfolio" class="container">
         <h2>Portfolio</h2>
