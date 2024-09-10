@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>098 Industries</title>
+    <title>For The People</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
 
+<body style="background-color: grey;">
+
+    <!-- Header -->
     <header>
         <div class="header-content">
             <h1>Adam Kenny</h1>
@@ -21,6 +23,231 @@
             </nav>
         </div>
     </header>
+
+    <!-- Section Above Portfolio -->
+    <section class="hero-section">
+        <img src="https://via.placeholder.com/150" alt="Freelancer Profile Image">
+        <h2>Adam Kenny</h2>
+        <p>Video Game Developer - Coding Enthusiast - Avid Gamer</p>
+    </section>
+
+    <div class="project-grid">
+        <div class="grid-item">
+            <p>Recorded YouTube Presentation 
+                <a href="https://youtu.be/lf1Nq2EWrfk" target="_blank"> 
+                    <img src="images/Youtube_Icon.png" width="100" height="132" alt="YouTube Icon"> 
+                    For The People Pitch Request on YouTube 
+                </a>
+            </p>
+        </div>
+        <div class="grid-item">
+            <p>Scrum Sessions 
+                <a href="https://trello.com/b/3aBwabpr/for-the-people" target="_blank"> 
+                    <img src="images/Trello_Icon.png" width="100" height="132" alt="Trello Icon"> 
+                    For The People Scrum 
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container" style="background-color: grey;">
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <img src="images/Github_Icon.png" alt="Portfolio 1" data-toggle="modal" data-target="#portfolioModal1"  style="width: 500px; height: 500px;">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="images/Coggle_Icon.jpg" alt="Portfolio 2" data-toggle="modal" data-target="#portfolioModal2">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="images/Youtube_Icon.png" alt="Portfolio 3" data-toggle="modal" data-target="#portfolioModal3">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 4" data-toggle="modal" data-target="#portfolioModal4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Portfolio 1 -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal1Label">Github Portfolio link</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/Github_Icon.png" alt="Project 1" class="mb-3" style="width: 350px; height: 335px;">
+                    <p>The Github link for this project!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Rampant098/Rampant098.github.io" class="button">To Github we go!</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 2 -->
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal2Label">Project 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/Coggle_Icon.jpg" alt="Project 2" class="mb-3">
+                    <p>The Finished Brainstorming Session</p>
+                    
+                    <div class="modal-footer">
+                        <a href="https://coggle.it/diagram/ZpPLtw3xjX9j65FP/t/intro-to-game-design-august-repeat-ca" class="button">To the Coggle Map!</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 3 -->
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal3Label">Project 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="images/Youtube_Icon.png" alt="Project 3" class="mb-3">
+                    <p>Check out our game pitch here on Youtube</p>
+                    <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> June 2024<br><strong>Service:</strong> App Development</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://coggle.it/diagram/ZpPLtw3xjX9j65FP/t/intro-to-game-design-august-repeat-ca" class="button">To the Coggle Map!</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 4 -->
+    <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal4Label">Project 4</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://via.placeholder.com/150" alt="Project 4" class="mb-3">
+                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> July 2024<br><strong>Service:</strong> Web Design</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 5 -->
+    <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal5Label">Project 5</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://via.placeholder.com/150" alt="Project 5" class="mb-3">
+                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> August 2024<br><strong>Service:</strong> E-commerce Development</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Portfolio 6 -->
+    <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModal6Label">Project 6</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://via.placeholder.com/150" alt="Project 6" class="mb-3">
+                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> September 2024<br><strong>Service:</strong> Digital Marketing</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes complete source files including HTML, CSS, and JavaScript, as well as optional LESS stylesheets for easy customization.</p>
+        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Adam Kenny. All Rights Reserved.</p>
+        <p>Location: South East Technological University (SETU), Cork Rd, Kilbarry, Waterford City</p>
+        <p>
+            <a href="#">Twitter</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">GitHub</a>
+        </p>
+    </footer>
+
+    <!-- Link Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+<body>
 
     <section id="portfolio" class="container">
         <h2>CA1</h2>
