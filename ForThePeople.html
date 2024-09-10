@@ -5,23 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>098 Industries</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <h1>098 Industiries</h1>
-        <nav>
-            <ul>
-                <li><a href="#CA1">CA1</a></li>
-                <li><a href="#CA2">CA2</a></li>
-                <li><a href="#CA3">CA3</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>Adam Kenny</h1>
+            <nav>
+                <ul>
+                    <li><a href="#CA1">CA1</a></li>
+                    <li><a href="#CA2">CA2</a></li>
+                    <li><a href="#CA3">CA3</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>CA1</h3>
+    <section id="portfolio" class="container">
+        <h2>CA1</h2>
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <img src="images/For the people Title Page.png" alt="Portfolio 1" data-toggle="modal" data-target="#portfolioModal1">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 2" data-toggle="modal" data-target="#portfolioModal2">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 3" data-toggle="modal" data-target="#portfolioModal3">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 4" data-toggle="modal" data-target="#portfolioModal4">
+            </div>
+        </div>
+
+
+        <h2>CA2</h2>
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <img src="images/Github_Icon.png" width="100" height="132" alt="GitHub Icon"> alt="Portfolio 1" data-toggle="modal" data-target="#portfolioModal5"  style="width: 350px; height: 335px;">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 2" data-toggle="modal" data-target="#portfolioModal6">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 3" data-toggle="modal" data-target="#portfolioModal7">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 4" data-toggle="modal" data-target="#portfolioModal8">
+            </div>
+        </div>
+
+        <h2>CA3</h2>
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <img src="images/For the people Title Page.png" alt="Portfolio 1" data-toggle="modal" data-target="#portfolioModal1"  style="width: 350px; height: 335px;">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 2" data-toggle="modal" data-target="#portfolioModal2">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 3" data-toggle="modal" data-target="#portfolioModal3">
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <img src="https://via.placeholder.com/350" alt="Portfolio 4" data-toggle="modal" data-target="#portfolioModal4">
+            </div>
+        </div>
+    </section>
+    
+
             <div class="project-grid">
                 <div class="grid-item">
                     <p>Find our Project stored here on GitHub 
@@ -54,6 +106,276 @@
                             For The People Scrum 
                         </a>
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal1Label">For The People</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/For the people Title Page.png" alt="Project 1" class="mb-3">
+                        <p>For The People is a visual novel that puts a spin on the cliche of evil aliens invading earth.<br> 
+                            Step into the shoes of Admiral Kril and uncover the mysteries of the ancient hellword known as Erith!</p>
+                        <p><strong>Game:</strong> For The People<br><strong>Genre:</strong> Visual Novel / Horror<br><strong>Status:</strong> In Developement</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://rampant098.github.io/ForThePeople.html" class="button">Click Here To Find Out More!</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 2 -->
+        <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal2Label">Project 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 2" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> May 2024<br><strong>Service:</strong> Graphic Design</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 3 -->
+        <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal3Label">Project 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 3" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> June 2024<br><strong>Service:</strong> App Development</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 4 -->
+        <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal4Label">Project 4</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 4" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> July 2024<br><strong>Service:</strong> Web Design</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 5 -->
+        <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal5Label">Project 5</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 5" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> August 2024<br><strong>Service:</strong> E-commerce Development</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 6 -->
+        <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal6Label">Project 6</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 6" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> September 2024<br><strong>Service:</strong> Digital Marketing</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal1Label">For The People</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="images/For the people Title Page.png" alt="Project 1" class="mb-3">
+                        <p>For The People is a visual novel that puts a spin on the cliche of evil aliens invading earth.<br> 
+                            Step into the shoes of Admiral Kril and uncover the mysteries of the ancient hellword known as Erith!</p>
+                        <p><strong>Game:</strong> For The People<br><strong>Genre:</strong> Visual Novel / Horror<br><strong>Status:</strong> In Developement</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="https://rampant098.github.io/ForThePeople.html" class="button">Click Here To Find Out More!</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 2 -->
+        <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal2Label">Project 2</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 2" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> May 2024<br><strong>Service:</strong> Graphic Design</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 3 -->
+        <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal3Label">Project 3</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 3" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> June 2024<br><strong>Service:</strong> App Development</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 4 -->
+        <div class="modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal4Label">Project 4</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 4" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> July 2024<br><strong>Service:</strong> Web Design</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 5 -->
+        <div class="modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal5Label">Project 5</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 5" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> August 2024<br><strong>Service:</strong> E-commerce Development</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal for Portfolio 6 -->
+        <div class="modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModal6Label">Project 6</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Project 6" class="mb-3">
+                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p><strong>Client:</strong> Start Bootstrap<br><strong>Date:</strong> September 2024<br><strong>Service:</strong> Digital Marketing</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
