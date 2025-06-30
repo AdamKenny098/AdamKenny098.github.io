@@ -1,188 +1,70 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Kenny</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>098 Forge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      image-rendering: crisp-edges;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #FFA726;
+      text-shadow: 0 0 10px #FFA726;
+      margin-top: 20px;
+    }
+
+    p {
+      max-width: 600px;
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #FFA726;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      box-shadow: 0 0 10px #FFA726;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #ff8c00;
+    }
+  </style>
 </head>
-
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <h1>Adam Kenny</h1>
-            <nav>
-                <ul>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Section Above Portfolio -->
-    <section class="hero-section">
-        <img src="images/Adam Kenny.jpg" alt="Freelancer Profile Image">
-        <h2>Adam Kenny</h2>
-        <p>Video Game Developer - Coding Enthusiast - Avid Gamer</p>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="container">
-        <div class="row">
-    <div class="col-md-4 portfolio-item">
-        <img src="images/For the people Title Page.png" alt="Portfolio 1" data-toggle="modal" data-target="#portfolioModal1"  style="width: 350px; height: 335px;">
-    </div>
-    <div class="col-md-4 portfolio-item">
-        <img src="images/Starfall Title Screen.png" alt="Portfolio 2" data-toggle="modal" data-target="#portfolioModal2" style="width: 350px; height: 335px;">
-    </div>
-    <div class="col-md-4 portfolio-item">
-        <img src="https://via.placeholder.com/350" alt="Portfolio 3" data-toggle="modal" data-target="#portfolioModal3" style="width: 350px; height: 335px;">>
-    </div>
-    </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About</h2>
-        <p>Hi, I’m Adam Kenny, a college student currently studying game development with a passion for creating fun and engaging experiences. As I work towards my degree in Applied Computing, I’m building a foundation in game mechanics, programming, and design principles through coursework and personal projects.<br>
-            <br>
-            I’ve had the opportunity to explore a range of tools and engines, including Unity, Unreal Engine, Maya, Audacity, and have developed skills in areas such as C#, 3D modelling and Asset Creation, Audio Design, Level Design and more. Whether I’m designing niche mechanics or experimenting with new challenges, my goal is to learn and grow with each new task.<br>
-            <br>
-            My portfolio showcases a variety of projects that reflect my evolving skills and vision, from solo projects to collaborative efforts with fellow students. I’m always excited to learn more, take on new challenges, and push the boundaries of what I can create.<br>
-            <br>
-            Feel free to take a look at my work, and if you’re interested in collaborating or want to know more about my journey, don’t hesitate to reach out!<br></p>
-        <p></p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-form">
-            <form action="https://formspree.io/f/xrbzwoqe" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label>Your email:</label>
-                    <input type="email" class="form-control" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <label>Your message:</label>
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Your file:</label>
-                    <input type="file" class="form-control" name="upload">
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Send</button>
-            </form>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Adam Kenny. All Rights Reserved.</p>
-        <p>Location: South East Technological University (SETU), Cork Rd, Kilbarry, Waterford City</p>
-        <p>
-            <a href="#">Twitter</a> |
-            <a href="#">Facebook</a> |
-            <a href="https://github.com/AdamKenny098">GitHub</a>
-        </p>
-    </footer>
-
-    <!-- Link Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
-
-    <!--                                        |\/|  / \  |\   /\   |    / 
-                                                |  |  | |  | |  |_|  |    \
-                                                |  |  \ /  |/   | |  |__  /
-        Portfolio Modals
-    --> 
-
-
-
-    <!-- Modal for Portfolio 1 -->
-    <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal1Label">For The People</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <a href="https://rampant098.itch.io/for-the-people">
-                    <img src="images/For the people Title Page.png" alt="Project 1" class="mb-3" style="width: 350px; height: 350px;">
-                </a>
-                <h4>Click The Image Above to Play!!</h4>
-                    <p>For The People is a visual novel that puts a spin on the cliche of evil aliens invading earth.<br> 
-                        Step into the shoes of Admiral Kril and uncover the mysteries of the ancient hellword known as Erith!</p>
-                    <p><strong>Game:</strong> For The People<br><strong>Genre:</strong> Visual Novel, Horror<br><strong>Status:</strong> In Developement</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="https://AdamKenny098.github.io/ForThePeople.html" class="button">Click Here To Find Out More!</a>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Portfolio 2 -->
-    <div class="modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal2Label">Starfall</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="images/Starfall Title Screen.png" alt="Project 2" class="mb-3" style="width: 350px; height: 350px;">
-                    <h4>Click The Image Above to Play!!</h4>
-                    <p>Escape from Zyphora's crater of life before its star engulfs the planet.<br> 
-                        Set far into humanities' future, Starfall is a first or third person sandbox survival</p>
-                    <p><strong>Game:</strong> Starfall<br><strong>Genre:</strong> First Person, Third Person, Sci-Fi, Space, Sandbox, Survival. <br><strong>Status:</strong> In Developement</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Portfolio 3 -->
-    <div class="modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="portfolioModal3Label">The Runner</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="https://via.placeholder.com/150" alt="Project 3" class="mb-3"><h4>Click The Image Above to Play!!</h4>
-                    <p><strong> Arklight Hotel awaits, but so does something far more sinister...</strong><br> 
-                        A college student, stranded with no other options, takes a mysterious job as the Runner at the isolated Arklight Hotel.<br> 
-                        Guided only by the cryptic words of a predecessor who vanished without a trace, you must survive the horrors inside and out—and uncover the dark fate of those who came before you.<br>
-                        Will you make it through the night, or become the next to disappear?</p>
-                    <p><strong>Game:</strong> The Runner<br><strong>Genre:</strong> First Person, Horror, Survival <br><strong>Status:</strong> In Developement</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+  <header>
+    <img class="logo" src="furnace (2).png" alt="098 Forge Logo" />
+    <h1>098 Forge</h1>
+    <p>Forging immersive indie survival experiences. Explore the frontier of gameplay, mechanics, and story.</p>
+    <button class="button">View Projects</button>
+  </header>
 </body>
 </html>
